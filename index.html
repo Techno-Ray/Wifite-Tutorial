@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automated Wi-Fi with Wifite</title>
+  </head>
+  <body>
+    <h1>Automated Wi-Fi with Wifite</h1>
+    <p>Hello Rays of Tech, In this tutorial we are going to look for wifi hacking using the inbuilt tool of Kali Linux called Wifite.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4gGM77KtwpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>For this tutorial we will use Command line interface (CLI). There is also an Graphical user interface (GUI) if you want you can also use GUI which is a very user friendly interface. But, for this tutorial I am going to assume that you are just a noob into this field and doesn’t know anything about CLI (Command line interface). Even the CLI of Wifite is very similar to as GUI so don't worry!!!</p>
+  <h2><i>Lets Start Hacking “ETHICLLY”:</i></h2>
+    <p>We will move stepwise further so you will not get lost in the “Terminal” i.e. Command line.</p>
+    <p><i><b>Before starting the tools for the Pentest let’s have a look around the things we will need in this tutorial. You will need the things listed below:</b></i></p>
+    <p>1) Open Source Linux opreating System. (“Kali linux/Parrot Os” Recommended)</p>
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/images.jpg" alt="An example image">
+    <p>2) Wi-Fi Adapter supporting monitor mode and Packet Injection. (In my case I am using TP-link 150Mbps High gain V3.)</p>
+      <img width="260" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/images-1.jpg">
+    <p>3) Get Close to the Target as possible as you can. (Advice:-Please be a little smart.)</p> 
+    <p>4) A little bit of free Time.</p>
+    <p>5) Let’s Get Started…</p>
+  <h3>Follow Completely and correctly and if you are unsure just Copy and Paste Commands.</h3>
+  <h4>Steps to Get Started:</h4>
+    <p>1) Start your Linux OS.</p>
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/images.jpg">
+    <p><i><b>In my Case it’s Kali-Linux.</b></i></p>  
+    <p>2) Open up your terminal from upper left corner if not present just type <b>“ctrl+alt+T”</b> on your Desktop. This will open your Terminal.</p> 
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/download.jpg">
+    <p><b><i>Terminal</i></b></p>  
+    <p>3) Now Type or just Copy and Paste All the Commands directly.</p>
+    <p>                <b>sudo apt update</b>               (to update system)</p>
+    <p>                <b>sudo apt upgrae</b>               (to upgrade system)</p>
+    <p>4) Now we have to put our Wireless card into Monitor Mode. Let’s first check if the card is recognised by the linux box or Machine. Type the command</p>
+    <p><b>iwconfig</b></p>
+    <p>and check if you have got the wlan interface. If present Move Forward.</p>
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/download-1.jpg">
+    <p><b><i>iwconfig</i></b></p>
+    <p>5) Now let us put the Wlan (wifi card) into the monitor mode by following commands:</p> 
+    <p><b>sudo airmon-ng check kill</b></p>
+    <p><b>sudo airmon-ng start [INTERFACE NAME]</b></p>
+    <p>This will put your Wireless interface into Monitor mode. You can cross-check it using command “iwconfig”.</p>
+    <p><b><i>Note, this will switch off your internet connection on that Interface.</i></b></p>
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/Screenshot-575-1024x492.png">
+    <p>6) Now let’s start the tool Wifite by using Command</p>
+    <p><b>sudo wifite</b></p>
+      <img width="560" height="315" src="https://technorayyt.000webhostapp.com/wp-content/uploads/2022/01/Screenshot-574-1024x491.png">
+      <p>7) This will automatically start scanning the Wi-Fi Network around you.</p>
+      <p>8) Now when you identifies the Target name just Press “ctrl+C” on your Keyboard. This will stop scanning the Networks and will show you the options to select Target network to start attack.</p>
+      <p><b><i>In this Tutorial we are going to use “Dictionary Attack” So…</i></b></p>
+      <p>9) Press “ctrl+c”</p>
+      <p>10) Then It will ask you if you want to continue to the next attack Press “c” to continue attacking</p>
+      <p>11) Do it Twice Again and Follow to the Fourth attack when it says that (Capturing Handshake) and stop and let it Go Forward on it’s own.</p>
+      <p>12) this will now Deauthentic all the Users Connected to the Target Network, and when the devices will try to connect again Wifite will automatically capture the HandShake and will save it to the /hs directory. And also will automatically start the dictionary attack.</p>
+      <p><b><i>Thanks for being with me.</i></b></p>
+      <p><b><i>If you have any Probloms Feel Free to Ask on my YouTube Channel</i></b></p>
+    </body>
+</html>
